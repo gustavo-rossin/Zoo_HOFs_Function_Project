@@ -1,7 +1,7 @@
 const data = require('../data/zoo_data');
 
 const { species } = data;
-const { name, popularity } = species;
+// const { name, popularity } = species;
 
 function countAnimals(animal) {
   species.map((qtd) => {
@@ -12,6 +12,6 @@ function countAnimals(animal) {
   });
 }
 
-console.log(countAnimals());
+// console.log(countAnimals());
 
 module.exports = countAnimals;
