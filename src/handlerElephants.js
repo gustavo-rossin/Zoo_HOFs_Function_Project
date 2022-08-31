@@ -8,14 +8,14 @@ const averageAge = ({ residents }) =>
 
 const computeData = (param, elephants) => {
   switch (param) {
-  case 'count':
-    return elephants.residents.length;
-  case 'names':
-    return elephants.residents.map((elephant) => elephant.name);
-  case 'averageAge':
-    return averageAge(elephants);
-  default:
-    return null;
+    case 'count':
+      return elephants.residents.length;
+    case 'names':
+      return elephants.residents.map((elephant) => elephant.name);
+    case 'averageAge':
+      return averageAge(elephants);
+    default:
+      return null;
   }
 };
 
@@ -33,4 +33,16 @@ const handlerElephants = (param) => {
   return computeData(param, elephants);
 };
 
-module.exports = handlerElephants;
+// console.log(getElephants().residents);
+// console.log(computeData());
+// console.log(computeData('names', species[7]));
+// console.log(computeData('averageAge', species[7]));
+// console.log(typeof getElephants);
+console.log(handlerElephants('i'));
+// console.log(handlerElephants('name'));
+// console.log(handlerElephants('popularity'));
+// console.log(handlerElephants('location'));
+// console.log(handlerElephants('availability'));
+// console.log(handlerElephants('residents'));
+
+module.exports = { handlerElephants, getElephants, computeData };
