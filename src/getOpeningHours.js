@@ -65,12 +65,4 @@ const getOpeningHours = (day, dataHour) => {
   return message;
 };
 
-module.exports = {
-  getOpeningHours,
-  isStringRepresentNumber,
-  validateHour,
-  validateDay,
-  empty,
-  fix12,
-  openOrClosed,
-};
+module.exports = getOpeningHours;
