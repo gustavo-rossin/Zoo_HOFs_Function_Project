@@ -1,4 +1,4 @@
-const data = require('../data/zoo_data');
+// const data = require('../data/zoo_data');
 
 // const entrants = [
 //   { name: 'Lara Carvalho', age: 5 },
