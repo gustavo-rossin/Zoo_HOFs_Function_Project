@@ -1,3 +1,4 @@
+/* eslint-disable editorconfig/editorconfig */
 const { hours } = require('../data/zoo_data');
 
 const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -8,8 +9,6 @@ const isStringRepresentNumber = (string, what) => {
     throw new Error(`The ${what} should represent a number`);
   }
 };
-
-// console.log(isStringRepresentNumber('12', 32));
 
 const validateAbbreviation = (abbreviation) => {
   if (!['AM', 'PM'].includes(abbreviation)) {
@@ -65,9 +64,6 @@ const getOpeningHours = (day, dataHour) => {
   message += openOrClosed(period, hour, open, close) ? 'open' : 'closed';
   return message;
 };
-
-console.log(getOpeningHours());
-console.log(getOpeningHours('Thu', '09:00-AM'));
 
 module.exports = {
   getOpeningHours,
