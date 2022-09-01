@@ -4,7 +4,8 @@ const { species, employees } = data;
 
 function getOldestFromFirstSpecies(id) {
   const idMainAnimal = employees.find((el1) => el1.id === id).responsibleFor[0];
-  const keyAnimal = species.find((el2) => el2.id === idMainAnimal).residents.sort((a, b) => b.age - a.age)[0];
+  const keyAnimal = species.find((el2) => el2.id === idMainAnimal)
+    .residents.sort((a, b) => b.age - a.age)[0];
   return [keyAnimal.name, keyAnimal.sex, keyAnimal.age];
 }
 
