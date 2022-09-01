@@ -13,23 +13,18 @@ const allAnimals = {
   giraffes: species[8].residents.length,
 };
 
-const penguin = { specie: 'penguins', sex: 'female' };
+const penguins = { specie: 'penguins', sex: 'female' };
+const lions = { specie: 'lions' };
 
 function countAnimals(animal) {
   if (animal === undefined) {
     return allAnimals;
   }
   if (Object.keys(animal).length === 1) {
-    const qtdAnimals = Object.entries(allAnimals).find((element, index) => {
-      if (element[0] === Object.values(animal)[0]) {
-        return Object.values(allAnimals)[index];
-      }
-      return 0;
-    });
-    return qtdAnimals[1];
+    return species.find((n) => n.name === animal.specie).residents.length;
   }
   if (Object.keys(animal.length === 2)) {
-    return species.find((el) => el.name === animal.specie)
+    return species.find((n) => n.name === animal.specie)
       .residents.filter((s) => s.sex === animal.sex).length;
   }
 }
@@ -37,7 +32,8 @@ function countAnimals(animal) {
 // console.log(Object.values(penguin)[0]);
 // console.log(Object.entries(allAnimals));
 
-// console.log(countAnimals());
-console.log(countAnimals(penguin));
+console.log(countAnimals());
+console.log(countAnimals(penguins));
+console.log(countAnimals(lions));
 
 module.exports = countAnimals;
