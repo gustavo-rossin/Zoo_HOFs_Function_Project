@@ -34,9 +34,5 @@ function getEmployeesCoverage(employee) {
     return coverage;
   }
 }
-// console.log(getEmployeesCoverage());
-// console.log(getEmployeesCoverage({ name: 'Sharonda' }));
-// console.log(getEmployeesCoverage({ name: 'Nelson' }));
-// console.log(getEmployeesCoverage({ id: 'c1f50212-35a6-4ecd-8223-f835538526c2' }));
-console.log(getEmployeesCoverage({ id: 'Id inválido' }));
+
 module.exports = getEmployeesCoverage;
