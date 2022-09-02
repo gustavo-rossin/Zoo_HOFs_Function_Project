@@ -13,9 +13,6 @@ const allAnimals = {
   giraffes: species[8].residents.length,
 };
 
-const penguins = { specie: 'penguins', sex: 'female' };
-const lions = { specie: 'lions' };
-
 function countAnimals(animal) {
   if (animal === undefined) {
     return allAnimals;
@@ -28,12 +25,5 @@ function countAnimals(animal) {
       .residents.filter((s) => s.sex === animal.sex).length;
   }
 }
-
-// console.log(Object.values(penguin)[0]);
-// console.log(Object.entries(allAnimals));
-
-console.log(countAnimals());
-console.log(countAnimals(penguins));
-console.log(countAnimals(lions));
 
 module.exports = countAnimals;
