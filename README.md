@@ -1,8 +1,10 @@
 <h1 align=center>Zoo Functions 🐘🦧🐺🐯🦁</h1>
+<h6 align=center>Projeto: 6/33</h6>
+
 
 ## Sobre
 
-Sexto projeto no geral e o último desenvolvido no módulo de `Fundamentos`. O objetivo foi resolver questões de lógica envolvendo um zoológico, utilizando Javascript com foco nas Higher Order Functions e na criação de testes unitários.
+Último projeto desenvolvido no módulo de `Fundamentos`. O objetivo foi resolver questões de lógica envolvendo um zoológico, utilizando Javascript com foco nas Higher Order Functions e na criação de testes unitários.
 
 Deste modo, as seguintes habilidades foram desenvolvidas neste projeto:
 
